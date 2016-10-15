@@ -3,25 +3,41 @@ package com.cristiansanchez.flicks.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 
 /**
  * Created by kristianss27 on 10/10/16.
  */
+@Parcel
 public class Movie {
 
-    private String id;
-    private String posterPath;
-    private String adult;
-    private String overView;
-    private String releaseDate;
-    private String originalTitle;
+    String id;
+    String posterPath;
+    String adult;
+    String overView;
+    String releaseDate;
+    String originalTitle;
+    String backDropPath;
+    long voteAverage;
+    String popularity;
+    String originalLanguage;
+    boolean moreAverage;
+    int orientation=0;
+
+    public Movie(){}
 
     public Movie(JSONObject jsonObject) throws JSONException{
+        this.id = jsonObject.getString("id");
         this.originalTitle = jsonObject.getString("original_title");
         this.posterPath = jsonObject.getString("poster_path");
         this.overView = jsonObject.getString("overview");
+        this.releaseDate = jsonObject.getString("release_date");
+        this.backDropPath = jsonObject.getString("backdrop_path");
+        this.voteAverage = jsonObject.getLong("vote_average");
+        this.popularity = jsonObject.getString("popularity");
+        this.originalLanguage = jsonObject.getString("original_language");
     }
 
     public static ArrayList<Movie> fromJSONArray(JSONArray jsonArray){
@@ -61,4 +77,33 @@ public class Movie {
     public String getOriginalTitle() {
         return originalTitle;
     }
+
+    public String getBackDropPath() {
+        return String.format("https://image.tmdb.org/t/p/w780/%s",backDropPath);
+    }
+
+    public long getVoteAverage() {
+        return voteAverage;
+    }
+
+    public boolean isMoreAverage() {
+        return moreAverage;
+    }
+
+    public String getPopularity() {
+        return popularity;
+    }
+
+    public String getOriginalLanguage() {
+        return originalLanguage;
+    }
+
+    public int getOrientation() {
+        return orientation;
+    }
+
+    public void setOrientation(int orientation) {
+        this.orientation = orientation;
+    }
+
 }
