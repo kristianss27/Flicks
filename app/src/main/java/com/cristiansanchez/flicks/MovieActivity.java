@@ -36,7 +36,7 @@ public class MovieActivity extends AppCompatActivity {
         /*We have created a ArrayAdapter to our listView (Homogenous)
         movieArrayAdapter = new MovieArrayAdapter(this,movies);
         listView.setAdapter(movieArrayAdapter);
-        youtube api key AIzaSyBB9ZVodyVmdjOuME9RPf1NC-OJE1dK4kQ 
+        youtube api key AIzaSyBB9ZVodyVmdjOuME9RPf1NC-OJE1dK4kQ
         */
 
         //In order to control different view layouts is necesary implement a heterogenous listview with the right ArrayAdapter

@@ -56,7 +56,7 @@ public class Movie {
         for (int i = 0; i < jsonArray.length(); i++) {
             try{
                 Movie movie = new Movie(jsonArray.getJSONObject(i));
-                movie.setVideo((i<5)?"true":"false");
+                //movie.setVideo((i<2)?"true":"false");
                 moviesArrayList.add(movie);
             }
             catch (JSONException e){
