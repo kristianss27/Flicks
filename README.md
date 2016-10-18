@@ -39,11 +39,9 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories (poltrait screen):
-<img src='http://i.imgur.com/CVXeZCT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Here's a walkthrough of implemented user stories (poltrait screen):[Video Walkthrough](http://i.imgur.com/CVXeZCT.gif)
 
-Here's a walkthrough of implemented user stories (Landscape screen):
-<img src='http://i.imgur.com/JSH6DaS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Here's a walkthrough of implemented user stories (Landscape screen):[Video Walkthrough](http://i.imgur.com/JSH6DaS)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
