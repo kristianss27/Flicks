@@ -1,5 +1,9 @@
 # Project 1 - *Flicks*
 
+Submitted by: **Cristian Sanchez** 
+Email: Kristianss27@gmail.com
+LinkedIn: https://www.linkedin.com/in/kristianss27
+
 **Flicks** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
 Time spent: **30** hours spent in total
