@@ -23,10 +23,16 @@ public class Movie {
     long voteAverage;
     String popularity;
     String originalLanguage;
+    String video;
     boolean moreAverage;
     int orientation=0;
+    public ViewType viewType;
 
     public Movie(){}
+
+    public enum ViewType{
+        REGULAR,POPULAR
+    }
 
     public Movie(JSONObject jsonObject) throws JSONException{
         this.id = jsonObject.getString("id");
@@ -36,8 +42,12 @@ public class Movie {
         this.releaseDate = jsonObject.getString("release_date");
         this.backDropPath = jsonObject.getString("backdrop_path");
         this.voteAverage = jsonObject.getLong("vote_average");
-        this.popularity = jsonObject.getString("popularity");
         this.originalLanguage = jsonObject.getString("original_language");
+        this.video = jsonObject.getString("video");
+        this.popularity = jsonObject.getString("popularity");
+        boolean isPopular = this.voteAverage>=5?true:false;
+        this.viewType = isPopular?ViewType.POPULAR:ViewType.REGULAR;
+
     }
 
     public static ArrayList<Movie> fromJSONArray(JSONArray jsonArray){
@@ -45,7 +55,9 @@ public class Movie {
         ArrayList<Movie> moviesArrayList = new ArrayList<Movie>(jsonArray.length());
         for (int i = 0; i < jsonArray.length(); i++) {
             try{
-               moviesArrayList.add(new Movie(jsonArray.getJSONObject(i)));
+                Movie movie = new Movie(jsonArray.getJSONObject(i));
+                movie.setVideo((i<5)?"true":"false");
+                moviesArrayList.add(movie);
             }
             catch (JSONException e){
                 e.printStackTrace();
@@ -104,6 +116,14 @@ public class Movie {
 
     public void setOrientation(int orientation) {
         this.orientation = orientation;
+    }
+
+    public String getVideo() {
+        return video;
+    }
+
+    public void setVideo(String video) {
+        this.video = video;
     }
 
 }

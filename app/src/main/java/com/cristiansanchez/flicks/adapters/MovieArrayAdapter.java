@@ -79,7 +79,7 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie>{
         viewHolder.tvTitle.setText(movie.getOriginalTitle());
         viewHolder.tvReview.setText(movie.getOverView());
         viewHolder.imgMovie.setTag(movie);
-        viewHolder..setOnClickListener(new View.OnClickListener(){
+        viewHolder.imgMovie.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Movie movie = (Movie) v.getTag();

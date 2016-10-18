@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Flicks</string>
+    <string name="movie_api_base">https://api.themoviedb.org/3/movie/</string>
+    <string name="movie_api_key">a07e22bc18f5cb106bfe4cc1f83ad8ed</string>
     <string name="movie_release_date">Release Date</string>
+    <string name="youtube_api_key">AIzaSyBB9ZVodyVmdjOuME9RPf1NC-OJE1dK4kQ</string>
 </resources>

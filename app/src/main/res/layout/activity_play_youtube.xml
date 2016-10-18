@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_dark">
+    android:background="@android:color/holo_red_dark"
+    tools:context="com.cristiansanchez.flicks.activities.PlayYoutubeActivity">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.cristiansanchez.flicks.activities.MovieDetailActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imgMovie"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-        android:src="@drawable/loading"
-        />
+        android:id="@+id/player"/>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +18,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
         android:id="@+id/tvTitle"
-        android:layout_below="@+id/imgMovie"
+        android:layout_below="@+id/player"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textStyle="bold"
@@ -84,4 +73,3 @@
         />
 
 </RelativeLayout>
-    </ScrollView>
