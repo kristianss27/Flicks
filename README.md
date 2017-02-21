@@ -1,6 +1,5 @@
 # Project 1 - *Flicks*
 
-Submitted by: **Cristian Sanchez**
 Email: Kristianss27@gmail.com
 LinkedIn: https://www.linkedin.com/in/kristianss27
 
