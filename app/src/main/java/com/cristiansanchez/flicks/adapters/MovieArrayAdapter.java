@@ -36,6 +36,10 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie>{
     }
 
     @Override
+    /*
+    To improve performance, we should apply the ViewHolder pattern
+    which speeds up the population of the ListView considerably by caching view lookups for smoother, faster item loading
+     */
     public View getView(int position, View convertView, ViewGroup parent) {
 
         Movie movie = getItem(position);

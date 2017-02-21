@@ -1,5 +1,9 @@
 # Project 1 - *Flicks*
 
+Submitted by: **Cristian Sanchez**
+Email: Kristianss27@gmail.com
+LinkedIn: https://www.linkedin.com/in/kristianss27
+
 **Flicks** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
 Time spent: **30** hours spent in total
@@ -35,15 +39,9 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories (poltrait screen):
-<img src='http://i.imgur.com/CVXeZCT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Here's a walkthrough of implemented user stories (poltrait screen):[Video Walkthrough](http://i.imgur.com/CVXeZCT.gif)
 
-Here's a walkthrough of implemented user stories (Landscape screen):
-<img src='http://i.imgur.com/JSH6DaS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/GFSB1">
-<a href="//imgur.com/GFSB1"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8">
-</script>
+Here's a walkthrough of implemented user stories (Landscape screen):[Video Walkthrough](http://i.imgur.com/JSH6DaS)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

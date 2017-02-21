@@ -50,7 +50,7 @@ public class MovieArrayAdapterHeterogenous extends ArrayAdapter<Movie>{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Log.d("GET VIEWWWW","GET VIEW " + position + " " + convertView);
+        Log.d("GET VIEW","GET VIEW " + position + " " + convertView);
         Movie movie = getItem(position);
         String imgUrl = null;
         int imgLoading = 0;
